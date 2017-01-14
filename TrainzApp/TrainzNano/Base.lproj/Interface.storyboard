@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <table alignment="left" id="als-SD-IVh">
+                            <items>
+                                <tableRow identifier="trainRow" id="OcG-fk-lFt">
+                                    <group key="rootItem" width="1" alignment="left" spacing="6" id="OoT-ZE-kNc">
+                                        <items>
+                                            <imageView width="24" height="24" alignment="left" verticalAlignment="center" image="train" contentMode="scaleAspectFit" id="TpK-eb-6rl">
+                                                <color key="tintColor" red="0.094395942989999995" green="0.71855926510000001" blue="0.044731602070000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                            <label alignment="left" verticalAlignment="center" text="A/C/E" id="PXR-ND-ntB"/>
+                                            <label alignment="right" verticalAlignment="center" text="⚠️" id="OpR-oX-jy5"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.04708534476715117" green="0.28683582505441202" blue="0.75636930418719217" alpha="1" colorSpace="calibratedRGB"/>
+                                        <edgeInsets key="margins" left="6" right="6" top="0.0" bottom="0.0"/>
+                                        <connections>
+                                            <segue destination="alQ-jn-RAT" kind="push" id="dT1-aa-wFd"/>
+                                        </connections>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <menu key="menu" id="zrs-Ei-7hX">
+                        <items>
+                            <menuItem title="Trains" icon="maybe" id="zGH-zx-Ony"/>
+                            <menuItem title="Advisories" icon="info" id="op7-Um-8OJ"/>
+                        </items>
+                    </menu>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Hza-7j-bEf">
+            <objects>
+                <controller id="alQ-jn-RAT">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="oMt-KD-5QS">
+                            <items>
+                                <group width="1" height="36" alignment="left" spacing="6" id="7tv-el-s24">
+                                    <items>
+                                        <imageView width="24" height="24" alignment="left" verticalAlignment="center" image="train" contentMode="scaleAspectFit" id="Nwi-le-CdG">
+                                            <color key="tintColor" red="0.094395942989999995" green="0.71855926510000001" blue="0.044731602070000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="A/C/E" id="GCX-Ox-yY4"/>
+                                        <label alignment="right" verticalAlignment="center" text="✅" id="N1u-rx-hpi"/>
+                                    </items>
+                                    <edgeInsets key="margins" left="6" right="7" top="0.0" bottom="0.0"/>
+                                </group>
+                                <separator alignment="left" id="EvM-rD-lBY"/>
+                                <label width="1" alignment="center" text="Good Service" textAlignment="center" numberOfLines="0" id="qWn-QM-vGN">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" red="0.047085344770000002" green="0.2868358251" blue="0.75636930420000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="4"/>
+                        </group>
+                        <button width="1" alignment="left" title="Add to Favorites" id="SNv-eW-Fd3"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="8" id="YcA-64-rEj">
+                            <items>
+                                <imageView width="1" height="64" alignment="center" image="train" contentMode="scaleAspectFit" id="0E9-YE-Vhp">
+                                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                                <label width="1" alignment="center" verticalAlignment="bottom" text="A/C/E Trains Delayed" textAlignment="center" numberOfLines="0" id="rDS-If-NiD">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="rDS-If-NiD" id="PAp-i2-ngX"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="8" id="Wis-hR-zP9">
+                            <items>
+                                <imageView width="1" height="64" alignment="center" image="train" contentMode="scaleAspectFit" id="s4E-6R-VPt">
+                                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                                <label width="1" alignment="center" text="A/C/E Trains Delayed" textAlignment="center" numberOfLines="0" id="IlR-7B-9EK">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <separator alignment="left" id="snn-Sp-k4L"/>
+                                <label width="1" alignment="center" text="Lorem ipsum dolor sit amet." textAlignment="center" numberOfLines="0" id="L89-jC-llV">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IlR-7B-9EK" id="fNl-Fr-hW6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
