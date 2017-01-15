@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3CA45D9C1E2A694800DE2922"
-               BuildableName = "TrainzKit Mobile.framework"
+               BuildableName = "TrainzKit.framework"
                BlueprintName = "TrainzKit Mobile"
                ReferencedContainer = "container:TrainzKit.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3CA45D9C1E2A694800DE2922"
-            BuildableName = "TrainzKit Mobile.framework"
+            BuildableName = "TrainzKit.framework"
             BlueprintName = "TrainzKit Mobile"
             ReferencedContainer = "container:TrainzKit.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3CA45D9C1E2A694800DE2922"
-            BuildableName = "TrainzKit Mobile.framework"
+            BuildableName = "TrainzKit.framework"
             BlueprintName = "TrainzKit Mobile"
             ReferencedContainer = "container:TrainzKit.xcodeproj">
          </BuildableReference>

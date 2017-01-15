@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char TrainzKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TrainzKit/PublicHeader.h>
 #import <TrainzKit/TransitHandler.h>
-#import <TrainzKit/TransitObject.h>
+#import <TrainzKit/TransitObjects.h>

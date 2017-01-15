@@ -15,7 +15,7 @@
 @property (readonly, copy) NSDate *lastUpdated;
 
 @property (readonly) NSArray<SubwayLine*> *subwayLineStatus;
-@property (readonly) NSArray<SubwayTrain*> *subwayTrainStatus;
+// @property (readonly) NSArray<SubwayTrain*> *subwayTrainStatus;
 
 + (TransitHandler *)defaultHandler;
 

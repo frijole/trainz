@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3CA45E261E2A6BDB00DE2922"
-               BuildableName = "TrainzKit Watch.framework"
+               BuildableName = "TrainzKit.framework"
                BlueprintName = "TrainzKit Watch"
                ReferencedContainer = "container:TrainzKit.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3CA45E261E2A6BDB00DE2922"
-            BuildableName = "TrainzKit Watch.framework"
+            BuildableName = "TrainzKit.framework"
             BlueprintName = "TrainzKit Watch"
             ReferencedContainer = "container:TrainzKit.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3CA45E261E2A6BDB00DE2922"
-            BuildableName = "TrainzKit Watch.framework"
+            BuildableName = "TrainzKit.framework"
             BlueprintName = "TrainzKit Watch"
             ReferencedContainer = "container:TrainzKit.xcodeproj">
          </BuildableReference>

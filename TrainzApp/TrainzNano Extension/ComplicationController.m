@@ -64,8 +64,8 @@
     switch (complication.family) {
         case CLKComplicationFamilyExtraLarge: {
             CLKComplicationTemplateExtraLargeStackImage *tmpTemplate = [[CLKComplicationTemplateExtraLargeStackImage alloc] init];
-            [tmpTemplate setLine1ImageProvider:[CLKImageProvider imageProviderWithOnePieceImage:[UIImage imageNamed:@"train"]]];
-            [[tmpTemplate line1ImageProvider] setTintColor:[UIColor orangeColor]];
+            [tmpTemplate setLine1ImageProvider:[CLKImageProvider imageProviderWithOnePieceImage:[UIImage imageNamed:@"train-ok"]]];
+            [tmpTemplate.line1ImageProvider setTintColor:[UIColor greenColor]];
             [tmpTemplate setLine2TextProvider:[CLKTextProvider textProviderWithFormat:@"Good Service"]];
             rtnTemplate = tmpTemplate;
         }
@@ -73,44 +73,46 @@
             
         case CLKComplicationFamilyModularLarge: {
             CLKComplicationTemplateModularLargeStandardBody *tmpTemplate = [[CLKComplicationTemplateModularLargeStandardBody alloc] init];
-            [(CLKComplicationTemplateModularLargeStandardBody*)tmpTemplate setHeaderTextProvider:[CLKTextProvider textProviderWithFormat:@"Good Service"]];
-            [(CLKComplicationTemplateModularLargeStandardBody*)tmpTemplate setBody1TextProvider:[CLKTextProvider textProviderWithFormat:@"On your favorite train lines."]];
+//            [tmpTemplate setHeaderImageProvider:[CLKImageProvider imageProviderWithOnePieceImage:[UIImage imageNamed:@"train-alert"]]];
+//            [tmpTemplate.headerImageProvider setTintColor:[UIColor orangeColor]];
+            [tmpTemplate setHeaderTextProvider:[CLKTextProvider textProviderWithFormat:@"Service Alert"]];
+            [tmpTemplate setBody1TextProvider:[CLKTextProvider textProviderWithFormat:@"ⒶⒸⒺ Delays"]];
             rtnTemplate = tmpTemplate;
         }
             break;
             
         case CLKComplicationFamilyModularSmall: {
-            CLKComplicationTemplateModularSmallStackText *tmpTemplate = [[CLKComplicationTemplateModularSmallStackText alloc] init];
-            [(CLKComplicationTemplateModularSmallStackText*)tmpTemplate setLine1TextProvider:[CLKTextProvider textProviderWithFormat:@"Good Service"]];
-            [(CLKComplicationTemplateModularSmallStackText*)tmpTemplate setLine2TextProvider:[CLKTextProvider textProviderWithFormat:@"On your favorite train lines."]];
+            CLKComplicationTemplateModularSmallSimpleImage *tmpTemplate = [[CLKComplicationTemplateModularSmallSimpleImage alloc] init];
+            [tmpTemplate setImageProvider:[CLKImageProvider imageProviderWithOnePieceImage:[UIImage imageNamed:@"train-alert"]]];
+            [[tmpTemplate imageProvider] setTintColor:[UIColor orangeColor]];
             rtnTemplate = tmpTemplate;
         }   break;
             
         case CLKComplicationFamilyCircularSmall: {
-            CLKComplicationTemplateCircularSmallStackText *tmpTemplate = [[CLKComplicationTemplateCircularSmallStackText alloc] init];
-            [(CLKComplicationTemplateModularSmallStackText*)tmpTemplate setLine1TextProvider:[CLKTextProvider textProviderWithFormat:@"Good Service"]];
-            [(CLKComplicationTemplateModularSmallStackText*)tmpTemplate setLine2TextProvider:[CLKTextProvider textProviderWithFormat:@"On your favorite train lines."]];
+            CLKComplicationTemplateCircularSmallSimpleImage *tmpTemplate = [[CLKComplicationTemplateCircularSmallSimpleImage alloc] init];
+            [tmpTemplate setImageProvider:[CLKImageProvider imageProviderWithOnePieceImage:[UIImage imageNamed:@"train-alert"]]];
+            [[tmpTemplate imageProvider] setTintColor:[UIColor orangeColor]];
             rtnTemplate = tmpTemplate;
         }   break;
             
         case CLKComplicationFamilyUtilitarianLarge: {
             CLKComplicationTemplateUtilitarianLargeFlat *tmpTemplate = [[CLKComplicationTemplateUtilitarianLargeFlat alloc] init];
-            [(CLKComplicationTemplateUtilitarianSmallFlat*)tmpTemplate setImageProvider:[CLKImageProvider imageProviderWithOnePieceImage:[UIImage imageNamed:@"train"]]];
+            [tmpTemplate setImageProvider:[CLKImageProvider imageProviderWithOnePieceImage:[UIImage imageNamed:@"train-alert"]]];
             [[tmpTemplate imageProvider] setTintColor:[UIColor orangeColor]];
-            [(CLKComplicationTemplateUtilitarianSmallFlat*)tmpTemplate setTextProvider:[CLKTextProvider textProviderWithFormat:@"Good Service"]];
+            [tmpTemplate setTextProvider:[CLKTextProvider textProviderWithFormat:@"DELAYS"]];
             rtnTemplate = tmpTemplate;
         }   break;
             
         case CLKComplicationFamilyUtilitarianSmall: {
-            CLKComplicationTemplateUtilitarianSmallRingText *tmpTemplate = [[CLKComplicationTemplateUtilitarianSmallRingText alloc] init];
-            [(CLKComplicationTemplateUtilitarianSmallFlat*)tmpTemplate setTextProvider:[CLKTextProvider textProviderWithFormat:@"Good Service"]];
-            // configure ring?
+            CLKComplicationTemplateUtilitarianSmallSquare *tmpTemplate = [[CLKComplicationTemplateUtilitarianSmallSquare alloc] init];
+            [tmpTemplate setImageProvider:[CLKImageProvider imageProviderWithOnePieceImage:[UIImage imageNamed:@"train-alert"]]];
+            [[tmpTemplate imageProvider] setTintColor:[UIColor orangeColor]];
             rtnTemplate = tmpTemplate;
         }   break;
             
         case CLKComplicationFamilyUtilitarianSmallFlat: {
             CLKComplicationTemplateUtilitarianSmallFlat *tmpTemplate = [[CLKComplicationTemplateUtilitarianSmallFlat alloc] init];
-            [(CLKComplicationTemplateUtilitarianSmallFlat*)tmpTemplate setTextProvider:[CLKTextProvider textProviderWithFormat:@"Good Service"]];
+            [tmpTemplate setTextProvider:[CLKTextProvider textProviderWithFormat:@"Good Service"]];
             rtnTemplate = tmpTemplate;
         }   break;
     }
