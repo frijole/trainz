@@ -80,6 +80,103 @@ NSString *const kXMLReaderTextNodeKey = @"textInProgress";
     [dataTask resume];
 }
 
++ (NSString *)formattedNameFromString:(NSString *)string {
+    NSString *rtnString = string;
+
+    
+    if ( [rtnString rangeOfString:@"1"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"1" withString:@"①"];
+    }
+
+    if ( [rtnString rangeOfString:@"2"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"2" withString:@"②"];
+    }
+
+    if ( [rtnString rangeOfString:@"3"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"3" withString:@"③"];
+    }
+
+    if ( [rtnString rangeOfString:@"4"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"4" withString:@"④"];
+    }
+
+    if ( [rtnString rangeOfString:@"5"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"5" withString:@"⑤"];
+    }
+
+    if ( [rtnString rangeOfString:@"6"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"6" withString:@"⑥"];
+    }
+
+    if ( [rtnString rangeOfString:@"7"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"7" withString:@"⑦"];
+    }
+
+
+    
+    if ( [rtnString rangeOfString:@"A"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"A" withString:@"Ⓐ"];
+    }
+    
+    if ( [rtnString rangeOfString:@"B"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"B" withString:@"Ⓑ"];
+    }
+    
+    if ( [rtnString rangeOfString:@"C"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"C" withString:@"Ⓒ"];
+    }
+    
+    if ( [rtnString rangeOfString:@"D"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"D" withString:@"Ⓓ"];
+    }
+    
+    if ( [rtnString rangeOfString:@"E"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"E" withString:@"Ⓔ"];
+    }
+    
+    if ( [rtnString rangeOfString:@"F"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"F" withString:@"Ⓕ"];
+    }
+    
+    if ( [rtnString rangeOfString:@"G"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"G" withString:@"Ⓖ"];
+    }
+    
+    if ( [rtnString rangeOfString:@"J"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"J" withString:@"Ⓙ"];
+    }
+    
+    if ( [rtnString rangeOfString:@"L"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"L" withString:@"Ⓛ"];
+    }
+    
+    if ( [rtnString rangeOfString:@"M"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"M" withString:@"Ⓜ︎"];
+    }
+    
+    if ( [rtnString rangeOfString:@"N"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"N" withString:@"Ⓝ"];
+    }
+    
+    if ( [rtnString rangeOfString:@"Q"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"Q" withString:@"Ⓠ"];
+    }
+    
+    if ( [rtnString rangeOfString:@"R"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"R" withString:@"Ⓡ"];
+    }
+    
+    if ( [rtnString rangeOfString:@"S"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"S" withString:@"Ⓢ"];
+    }
+    
+    if ( [rtnString rangeOfString:@"Z"].location != NSNotFound ) {
+        rtnString = [rtnString stringByReplacingOccurrencesOfString:@"Z" withString:@"Ⓩ"];
+    }
+    
+    return rtnString;
+}
+
 - (BOOL)parseTransitData:(NSDictionary *)transitData {
     BOOL rtnStatus = NO;
     
@@ -87,7 +184,7 @@ NSString *const kXMLReaderTextNodeKey = @"textInProgress";
     NSMutableArray *tmpSubwayLines = [NSMutableArray array];;
     for ( NSDictionary *tmpSubwayDict in [transitData valueForKeyPath:@"service.subway.line"] ) {
         SubwayLine *tmpSubwayLine = [[SubwayLine alloc] initWithDictionary:tmpSubwayDict];
-        if ( tmpSubwayLine ) {
+        if ( tmpSubwayLine && ![tmpSubwayLine.name isEqualToString:@"SIR"] ) {
             [tmpSubwayLines addObject:tmpSubwayLine];
         }
     }

@@ -10,6 +10,9 @@
 
 @interface TrainListViewController : UITableViewController
 
+@property (nonatomic, weak) IBOutlet UILabel *statusLabel;
+
+- (IBAction)exitToTrainList:(UIStoryboardSegue *)unwindSegue;
 
 @end
 

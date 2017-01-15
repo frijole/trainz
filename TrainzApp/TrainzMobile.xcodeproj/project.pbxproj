@@ -22,11 +22,11 @@
 		3CA45DEB1E2A6ACE00DE2922 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA45DEA1E2A6ACE00DE2922 /* ComplicationController.m */; };
 		3CA45DED1E2A6ACE00DE2922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA45DEC1E2A6ACE00DE2922 /* Assets.xcassets */; };
 		3CA45DF11E2A6ACE00DE2922 /* TrainzNano.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3CA45DCD1E2A6ACD00DE2922 /* TrainzNano.app */; };
-		3CA45E641E2A723200DE2922 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA45E631E2A723200DE2922 /* SettingsViewController.m */; };
 		3CA45E661E2AF4DC00DE2922 /* TrainzKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA45E651E2AF4DC00DE2922 /* TrainzKit.framework */; };
 		3CA45E671E2AF4DC00DE2922 /* TrainzKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA45E651E2AF4DC00DE2922 /* TrainzKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3CA45E6A1E2AF4E400DE2922 /* TrainzKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA45E691E2AF4E400DE2922 /* TrainzKit.framework */; };
 		3CA45E6B1E2AF4E400DE2922 /* TrainzKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA45E691E2AF4E400DE2922 /* TrainzKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CA45E6F1E2B9E2B00DE2922 /* TrainDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA45E6E1E2B9E2B00DE2922 /* TrainDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,10 +121,10 @@
 		3CA45DEC1E2A6ACE00DE2922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CA45DEE1E2A6ACE00DE2922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CA45E4D1E2A6DB700DE2922 /* TrainzKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TrainzKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CA45E621E2A723200DE2922 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
-		3CA45E631E2A723200DE2922 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		3CA45E651E2AF4DC00DE2922 /* TrainzKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TrainzKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA45E691E2AF4E400DE2922 /* TrainzKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TrainzKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA45E6D1E2B9E2B00DE2922 /* TrainDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainDetailViewController.h; sourceTree = "<group>"; };
+		3CA45E6E1E2B9E2B00DE2922 /* TrainDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,8 +174,8 @@
 				3CA45D7D1E2A692600DE2922 /* AppDelegate.m */,
 				3CA45D7F1E2A692600DE2922 /* TrainListViewController.h */,
 				3CA45D801E2A692600DE2922 /* TrainListViewController.m */,
-				3CA45E621E2A723200DE2922 /* SettingsViewController.h */,
-				3CA45E631E2A723200DE2922 /* SettingsViewController.m */,
+				3CA45E6D1E2B9E2B00DE2922 /* TrainDetailViewController.h */,
+				3CA45E6E1E2B9E2B00DE2922 /* TrainDetailViewController.m */,
 				3CA45D851E2A692600DE2922 /* Main.storyboard */,
 				3CA45D791E2A692500DE2922 /* Supporting Files */,
 			);
@@ -371,8 +371,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA45E6F1E2B9E2B00DE2922 /* TrainDetailViewController.m in Sources */,
 				3CA45D7E1E2A692600DE2922 /* AppDelegate.m in Sources */,
-				3CA45E641E2A723200DE2922 /* SettingsViewController.m in Sources */,
 				3CA45D811E2A692600DE2922 /* TrainListViewController.m in Sources */,
 				3CA45D7B1E2A692600DE2922 /* main.m in Sources */,
 			);

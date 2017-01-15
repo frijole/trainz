@@ -21,6 +21,9 @@
 
 - (void)updateDataWithCompletion:(void (^)(NSArray<SubwayLine*> *subwayLineStatus, NSError *error))completionBlock;
 
+// random utility
++ (NSString *)formattedNameFromString:(NSString *)string;
+
 @end
 
 @interface NSDateFormatter (TransitHandler)
