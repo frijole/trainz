@@ -34,6 +34,11 @@
     // Override in subclasses
 }
 
+- (NSDictionary *)dictionaryRepresentation {
+    // Override in subclasses
+    return nil;
+}
+
 @end
 
 
@@ -75,6 +80,14 @@
         // TODO: parse into NSDate
         self.serviceInformationUpdatedAt = tmpTimestamp;
     }
+}
+
+- (NSDictionary *)dictionaryRepresentation {
+    NSDictionary *rtnDictionary = @{@"name":self.name,
+                                    @"status":self.status,
+                                    @"service_status":self.serviceStatus};
+
+    return rtnDictionary;
 }
 
 - (NSArray *)serviceStatusFromString:(NSString *)serviceInformationString {

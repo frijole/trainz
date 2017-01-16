@@ -12,6 +12,7 @@
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 - (void)updateWithDictionary:(NSDictionary *)dictionary;
+- (NSDictionary *)dictionaryRepresentation;
 
 @end
 

@@ -27,6 +27,14 @@
 		3CA45E5F1E2A6E6E00DE2922 /* TrainzKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA45DA01E2A694800DE2922 /* TrainzKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CA45E601E2A6E6E00DE2922 /* TrainzKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA45DA01E2A694800DE2922 /* TrainzKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CA45E611E2A6E6F00DE2922 /* TrainzKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA45DA01E2A694800DE2922 /* TrainzKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CC423441E2BBF0300E00530 /* TransitCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CC423421E2BBF0300E00530 /* TransitCache.h */; };
+		3CC423451E2BBF0300E00530 /* TransitCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CC423421E2BBF0300E00530 /* TransitCache.h */; };
+		3CC423461E2BBF0300E00530 /* TransitCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CC423421E2BBF0300E00530 /* TransitCache.h */; };
+		3CC423471E2BBF0300E00530 /* TransitCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CC423421E2BBF0300E00530 /* TransitCache.h */; };
+		3CC423481E2BBF0300E00530 /* TransitCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC423431E2BBF0300E00530 /* TransitCache.m */; };
+		3CC423491E2BBF0300E00530 /* TransitCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC423431E2BBF0300E00530 /* TransitCache.m */; };
+		3CC4234A1E2BBF0300E00530 /* TransitCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC423431E2BBF0300E00530 /* TransitCache.m */; };
+		3CC4234B1E2BBF0300E00530 /* TransitCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC423431E2BBF0300E00530 /* TransitCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +48,8 @@
 		3CA45E271E2A6BDB00DE2922 /* TrainzKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrainzKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA45E341E2A6BEC00DE2922 /* TrainzKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrainzKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA45E411E2A6BFE00DE2922 /* TrainzKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrainzKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC423421E2BBF0300E00530 /* TransitCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitCache.h; sourceTree = "<group>"; };
+		3CC423431E2BBF0300E00530 /* TransitCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,8 @@
 				3CA45DA01E2A694800DE2922 /* TrainzKit.h */,
 				3CA45E1A1E2A6B6F00DE2922 /* TransitHandler.h */,
 				3CA45E1B1E2A6B6F00DE2922 /* TransitHandler.m */,
+				3CC423421E2BBF0300E00530 /* TransitCache.h */,
+				3CC423431E2BBF0300E00530 /* TransitCache.m */,
 				3CA45E1C1E2A6B6F00DE2922 /* TransitObjects.h */,
 				3CA45E1D1E2A6B6F00DE2922 /* TransitObjects.m */,
 				3CA45DA11E2A694800DE2922 /* Info.plist */,
@@ -114,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CA45E201E2A6B6F00DE2922 /* TransitObjects.h in Headers */,
+				3CC423441E2BBF0300E00530 /* TransitCache.h in Headers */,
 				3CA45DA21E2A694800DE2922 /* TrainzKit.h in Headers */,
 				3CA45E1E1E2A6B6F00DE2922 /* TransitHandler.h in Headers */,
 			);
@@ -124,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CA45E541E2A6E5900DE2922 /* TransitHandler.h in Headers */,
+				3CC423451E2BBF0300E00530 /* TransitCache.h in Headers */,
 				3CA45E5F1E2A6E6E00DE2922 /* TrainzKit.h in Headers */,
 				3CA45E561E2A6E5F00DE2922 /* TransitObjects.h in Headers */,
 			);
@@ -134,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CA45E531E2A6E5800DE2922 /* TransitHandler.h in Headers */,
+				3CC423461E2BBF0300E00530 /* TransitCache.h in Headers */,
 				3CA45E601E2A6E6E00DE2922 /* TrainzKit.h in Headers */,
 				3CA45E571E2A6E6000DE2922 /* TransitObjects.h in Headers */,
 			);
@@ -144,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CA45E551E2A6E5900DE2922 /* TransitHandler.h in Headers */,
+				3CC423471E2BBF0300E00530 /* TransitCache.h in Headers */,
 				3CA45E611E2A6E6F00DE2922 /* TrainzKit.h in Headers */,
 				3CA45E581E2A6E6000DE2922 /* TransitObjects.h in Headers */,
 			);
@@ -311,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC423481E2BBF0300E00530 /* TransitCache.m in Sources */,
 				3CA45E211E2A6B6F00DE2922 /* TransitObjects.m in Sources */,
 				3CA45E1F1E2A6B6F00DE2922 /* TransitHandler.m in Sources */,
 			);
@@ -320,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC423491E2BBF0300E00530 /* TransitCache.m in Sources */,
 				3CA45E5A1E2A6E6900DE2922 /* TransitObjects.m in Sources */,
 				3CA45E591E2A6E6900DE2922 /* TransitHandler.m in Sources */,
 			);
@@ -329,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC4234A1E2BBF0300E00530 /* TransitCache.m in Sources */,
 				3CA45E5C1E2A6E6900DE2922 /* TransitObjects.m in Sources */,
 				3CA45E5B1E2A6E6900DE2922 /* TransitHandler.m in Sources */,
 			);
@@ -338,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC4234B1E2BBF0300E00530 /* TransitCache.m in Sources */,
 				3CA45E5E1E2A6E6A00DE2922 /* TransitObjects.m in Sources */,
 				3CA45E5D1E2A6E6A00DE2922 /* TransitHandler.m in Sources */,
 			);
@@ -635,6 +655,7 @@
 				3CA45DA71E2A694800DE2922 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CA45E2C1E2A6BDB00DE2922 /* Build configuration list for PBXNativeTarget "TrainzKit Watch" */ = {
 			isa = XCConfigurationList;
@@ -643,6 +664,7 @@
 				3CA45E2E1E2A6BDB00DE2922 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CA45E391E2A6BEC00DE2922 /* Build configuration list for PBXNativeTarget "TrainzKit TV" */ = {
 			isa = XCConfigurationList;
@@ -651,6 +673,7 @@
 				3CA45E3B1E2A6BEC00DE2922 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CA45E461E2A6BFE00DE2922 /* Build configuration list for PBXNativeTarget "TrainzKit Mac" */ = {
 			isa = XCConfigurationList;
@@ -659,6 +682,7 @@
 				3CA45E481E2A6BFE00DE2922 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

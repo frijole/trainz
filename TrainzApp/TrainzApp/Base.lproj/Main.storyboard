@@ -125,7 +125,7 @@
             </objects>
             <point key="canvasLocation" x="748" y="-351"/>
         </scene>
-        <!--ⒶⒸⒺ-->
+        <!--Details-->
         <scene sceneID="UtY-pO-5WY">
             <objects>
                 <tableViewController id="aw4-nj-S8q" sceneMemberID="viewController">
@@ -253,7 +253,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="ⒶⒸⒺ" id="Qzu-cq-sWK">
+                    <navigationItem key="navigationItem" title="Details" id="Qzu-cq-sWK">
                         <barButtonItem key="rightBarButtonItem" image="second" id="etU-sg-bgp"/>
                     </navigationItem>
                 </tableViewController>
