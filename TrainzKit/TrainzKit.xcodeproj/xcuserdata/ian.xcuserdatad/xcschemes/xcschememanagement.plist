@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>TrainzKit Mac.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>TrainzKit TV.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>TrainzKit Watch.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>TrainzKit.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3CA45D9C1E2A694800DE2922</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3CA45E261E2A6BDB00DE2922</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3CA45E331E2A6BEC00DE2922</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3CA45E401E2A6BFE00DE2922</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
