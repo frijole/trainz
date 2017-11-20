@@ -5,7 +5,7 @@
       location = "group:TrainzKit/TrainzKit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/ian/Desktop/Trainz/TrainzApp/TrainzMobile.xcodeproj">
+      location = "group:TrainzApp/TrainzMobile.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:TrainzTV/TrainzTV.xcodeproj">
